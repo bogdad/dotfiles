@@ -1,0 +1,2 @@
+ENV["PLOTS_DEFAULT_BACKEND"] = "GR"
+Pkg.add("FactCheck")
