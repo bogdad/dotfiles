@@ -27,6 +27,7 @@ brew 'wget'
 brew 'yarn'
 brew 'youtube-dl'
 brew 'rustup'
+brew 'mono'
 
 cask 'firefox'
 cask 'google-chrome'
