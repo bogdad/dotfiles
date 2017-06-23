@@ -54,7 +54,7 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 export PATH=$HOME/bin:/usr/local/bin:$PATH:/Applications/Julia-0.5.app/Contents/Resources/julia/bin/
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/Users/vladimirshakhov/.oh-my-zsh
+export ZSH=/Users/vladimirshakhov/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -145,3 +145,5 @@ alias docker-ls='docker run -it docker-ls docker-ls'
 alias ssh='ssh -A'
 alias dr='disco role'
 source $HOME/.cargo/env
+#export PATH="/Users/vladimirshakhov/toolkit:$PATH"
+export PATH="/Users/vladimirshakhov/FlameGraph:$PATH"
