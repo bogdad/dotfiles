@@ -11,5 +11,5 @@
         "toolchain": "nightly-2017-06-08-x86_64-apple-darwin"
     },
     "rust.mode": "legacy",
-    "lldb.executable": "${env:HOME}/.dotfiles/lldb/mylldb"
+    "lldb.executable": "mylldb"
 }
