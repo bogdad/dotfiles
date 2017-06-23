@@ -32,6 +32,7 @@ brew 'glib'
 brew 'pango'
 brew 'atk'
 brew 'gtk+3'
+brew 'llvm'
 
 cask 'firefox'
 cask 'google-chrome'
