@@ -147,3 +147,4 @@ alias dr='disco role'
 source $HOME/.cargo/env
 #export PATH="/Users/vladimirshakhov/toolkit:$PATH"
 export PATH="/Users/vladimirshakhov/FlameGraph:$PATH"
+alias gu='git fetch upstream && git rebase upstream/master'

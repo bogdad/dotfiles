@@ -1,5 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "editor.formatOnSave": false,
     "julia.executablePath": "/Applications/Julia-0.5.app/Contents/Resources/julia/bin//julia",
     "files.associations": {
         "*.rs": "rust"
@@ -11,5 +12,5 @@
         "toolchain": "nightly-2017-06-08-x86_64-apple-darwin"
     },
     "rust.mode": "legacy",
-    "lldb.executable": "my-rust-lldb"
+    "lldb.executable": "mylldb"
 }
