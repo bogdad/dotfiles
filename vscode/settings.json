@@ -11,6 +11,6 @@
     "rust.rustup": {
         "toolchain": "nightly-2017-06-08-x86_64-apple-darwin"
     },
-    "rust.mode": "legacy",
+    "rust.mode": "rls",
     "lldb.executable": "mylldb"
 }
