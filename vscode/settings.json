@@ -9,8 +9,13 @@
     //"rust.racerPath": "/Users/vladimirshakhov/.cargo/bin/racer",
     //"rust.rustLangSrcPath": "/Users/vladimirshakhov/.rustup/toolchains/nightly-2017-06-08-x86_64-apple-darwin/lib/rustlib/src/rust/src",
     "rust.rustup": {
-        "toolchain": "nightly-2017-06-08-x86_64-apple-darwin"
+        "toolchain": "nightly-2017-06-08-x86_64-apple-darwin",
+        "nightlyToolchain": "nightly-2017-06-08-x86_64-apple-darwin"
     },
     "rust.mode": "rls",
-    "lldb.executable": "mylldb"
+    "lldb.executable": "mylldb",
+    "rust.rls": {
+        "executable": "rls",
+        "useRustfmt": true
+    }
 }
