@@ -10,5 +10,5 @@ fi
 
 code --install-extension julialang.language-julia
 code --install-extension kalitaalexey.vscode-rust
-code --install-extension gerane.solarized-dark
+code --install-extension gerane.Theme-Solarized-dark
 
