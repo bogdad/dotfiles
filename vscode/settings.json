@@ -12,7 +12,7 @@
         "toolchain": "nightly-2017-06-08-x86_64-apple-darwin",
         "nightlyToolchain": "nightly-2017-06-08-x86_64-apple-darwin"
     },
-    "rust.mode": "rls",
+    "rust.mode": "legacy",
     "lldb.executable": "mylldb",
     "rust.rls": {
         "executable": "rls",

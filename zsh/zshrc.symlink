@@ -59,7 +59,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+export ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -105,6 +105,8 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git,zsh-syntax-highlighting)
 
+ZSH_THEME="agnoster"
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -125,7 +127,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -135,10 +137,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+#
 
-set ZSH_THEME="agnoster"
+DEFAULT_USER=$USER
 
-###source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 alias 'pssh'='pssh -X -A -x "-q -t -t -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"'
 alias docker-ls='docker run -it docker-ls docker-ls'
@@ -146,6 +150,6 @@ alias ssh='ssh -A'
 alias dr='disco role'
 source $HOME/.cargo/env
 #export PATH="$HOME/toolkit:$PATH"
-export PATH="$HOME//FlameGraph:$PATH"
+export PATH="$HOME/FlameGraph:$PATH"
 alias gu='git fetch upstream && git rebase upstream/master'
 export RUST_SRC_PATH=${HOME}/.rustup/toolchains/nightly-2017-06-08-x86_64-apple-darwin/lib/rustlib/src/rust/src
