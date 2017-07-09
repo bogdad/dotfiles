@@ -7,3 +7,8 @@ if [[ ! -L "$target" ]]; then
     mv -- "$target" "$backup"
     ln -s -- "$original" "$target"
 fi
+
+code --install-extension julialang.language-julia
+code --install-extension kalitaalexey.vscode-rust
+code --install-extension gerane.solarized-dark
+
