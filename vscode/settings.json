@@ -17,5 +17,6 @@
     "rust.rls": {
         "executable": "rls",
         "useRustfmt": true
-    }
+    },
+    "workbench.colorTheme": "Solarized Dark"
 }
