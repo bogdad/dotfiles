@@ -3,6 +3,9 @@ cask_args appdir: '/Applications'
 tap 'homebrew/bundle'
 tap 'puma/puma'
 
+brew 'zsh'
+brew 'zsh-completions'
+
 brew 'ack'
 brew 'coreutils'
 brew 'go'
@@ -32,7 +35,7 @@ brew 'glib'
 brew 'pango'
 brew 'atk'
 brew 'gtk+3'
-brew llvm --with-lldb
+#brew llvm --with-lldb
 
 cask 'firefox'
 cask 'google-chrome'
@@ -40,3 +43,4 @@ cask 'handbrake'
 cask 'slack'
 cask 'steam'
 cask 'spectacle'
+cask 'visual-studio-code'
