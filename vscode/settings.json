@@ -12,11 +12,13 @@
         "toolchain": "nightly-2017-06-08-x86_64-apple-darwin",
         "nightlyToolchain": "nightly-2017-06-08-x86_64-apple-darwin"
     },
+    "workbench.colorTheme": "Solarized Dark",
     "rust.mode": "legacy",
     "lldb.executable": "mylldb",
     "rust.rls": {
-        "executable": "rls",
-        "useRustfmt": true
-    },
-    "workbench.colorTheme": "Solarized Dark"
+        "executable": "rustup",
+        "useRustfmt": true,
+        "args": "run nightly rls",
+        "revealOutputChannelOn": "warn"
+    }
 }

@@ -152,4 +152,4 @@ source $HOME/.cargo/env
 #export PATH="$HOME/toolkit:$PATH"
 export PATH="$HOME/FlameGraph:$PATH"
 alias gu='git fetch upstream && git rebase upstream/master'
-export RUST_SRC_PATH=${HOME}/.rustup/toolchains/nightly-2017-06-08-x86_64-apple-darwin/lib/rustlib/src/rust/src
+export RUST_SRC_PATH="`rustc --print sysroot`/lib/rustlib/src/rust/src"
