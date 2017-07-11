@@ -153,3 +153,5 @@ source $HOME/.cargo/env
 export PATH="$HOME/FlameGraph:$PATH"
 alias gu='git fetch upstream && git rebase upstream/master'
 export RUST_SRC_PATH="`rustc --print sysroot`/lib/rustlib/src/rust/src"
+
+export PATH="$PATH:$HOME/IdeaProjects/scripts"
