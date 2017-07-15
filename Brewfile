@@ -45,3 +45,5 @@ cask 'slack'
 cask 'spectacle'
 #cask 'visual-studio-code'
 #cask 'iterm2'
+
+brew 'valgrind'

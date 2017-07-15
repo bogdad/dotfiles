@@ -152,7 +152,7 @@ source $HOME/.cargo/env
 #export PATH="$HOME/toolkit:$PATH"
 export PATH="$HOME/FlameGraph:$PATH"
 alias gu='git fetch upstream && git rebase upstream/master'
-export RUST_SRC_PATH="`rustc --print sysroot`/lib/rustlib/src/rust/src"
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 export PATH="$PATH:$HOME/IdeaProjects/scripts"
 #alias connect_dealer='curl -i -N -H "Connection: Upgrade" -H "Upgrade: websocket" -H "Origin: https://${HOSTDEALER}" -H "Authorization: Bearer $TOKEN" http://${HOSTDEALER} '
