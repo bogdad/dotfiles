@@ -1,5 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
+    "files.insertFinalNewline": true,
     "editor.formatOnSave": false,
     "julia.executablePath": "/Applications/Julia-0.5.app/Contents/Resources/julia/bin//julia",
     "files.associations": {

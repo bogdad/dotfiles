@@ -47,3 +47,5 @@ cask 'spectacle'
 #cask 'iterm2'
 
 brew 'valgrind'
+
+brew 'ripgrep'
