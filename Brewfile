@@ -49,3 +49,4 @@ cask 'spectacle'
 brew 'valgrind'
 
 brew 'ripgrep'
+brew 'pstree'
