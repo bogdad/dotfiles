@@ -51,4 +51,5 @@ brew 'valgrind'
 brew 'ripgrep'
 brew 'pstree'
 
-cask 'monosnap'
+#cask 'monosnap'
+cask 'flux'
