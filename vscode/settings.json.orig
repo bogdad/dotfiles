@@ -1,0 +1,7 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "rust.cargoPath": "/Users/vshakhov/.cargo/bin/cargo",
+    "rust.racerPath": "/Users/vshakhov/.cargo/bin/racer",
+    "rust.cargoHomePath": "/Users/vshakhov/.cargo",
+    "rust.rustsymPath": "/Users/vshakhov/.cargo/bin/rustsym"
+}
