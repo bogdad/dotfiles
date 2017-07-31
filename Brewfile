@@ -53,3 +53,5 @@ brew 'pstree'
 
 #cask 'monosnap'
 cask 'flux'
+
+brew 'shellcheck'
