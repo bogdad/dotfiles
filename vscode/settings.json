@@ -19,8 +19,11 @@
     "rust.rls": {
         "executable": "rustup",
         "useRustfmt": true,
-        "args": "run nightly rls",
+        "args": [
+            "run nightly rls"
+        ],
         "revealOutputChannelOn": "warn"
     },
-    "rust.rustLangSrcPath": "/Users/vladimirshakhov/.rustup/toolchains/nightly-2017-06-08-x86_64-apple-darwin/lib/rustlib/src/rust/src"
+    "rust.rustLangSrcPath": "/Users/vladimirshakhov/.rustup/toolchains/nightly-2017-06-08-x86_64-apple-darwin/lib/rustlib/src/rust/src",
+    "window.zoomLevel": 0
 }
