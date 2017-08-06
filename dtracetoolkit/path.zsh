@@ -1,1 +1,1 @@
-export PATH="$PATH:$HOME/dtracetoolkit"
+export PATH="$PATH:$HOME/dtracetoolkit/Bin"
