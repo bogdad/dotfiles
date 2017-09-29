@@ -55,3 +55,5 @@ brew 'pstree'
 cask 'flux'
 
 brew 'shellcheck'
+
+brew 'fd'
