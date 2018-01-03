@@ -59,3 +59,5 @@ brew 'shellcheck'
 brew 'fd'
 brew 'terraform'
 brew 'netcat'
+
+brew 'findutils' args: ['with-default-names']
