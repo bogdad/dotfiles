@@ -61,3 +61,5 @@ brew 'terraform'
 brew 'netcat'
 
 brew 'findutils' args: ['with-default-names']
+
+brew 'fish'
