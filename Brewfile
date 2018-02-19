@@ -60,6 +60,8 @@ brew 'fd'
 brew 'terraform'
 brew 'netcat'
 
-brew 'findutils' args: ['with-default-names']
+brew 'findutils', args: ['with-default-names']
 
 brew 'fish'
+
+brew 'valgrind'
