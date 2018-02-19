@@ -1,5 +1,8 @@
-bind \eB backward-word
-bind \eF forward-word
+function fish_user_key_bindings
+  bind \eB backward-word
+  bind \eF forward-word
+end
+
 alias pssh='pssh -X -A -x "-q -t -t -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"'
 alias ssh='ssh -A'
 alias dr='disco role'
