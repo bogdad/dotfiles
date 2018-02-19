@@ -1,3 +1,5 @@
+bind \eB backward-word
+bind \eF forward-word
 alias pssh='pssh -X -A -x "-q -t -t -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"'
 alias ssh='ssh -A'
 alias dr='disco role'
