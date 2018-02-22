@@ -67,3 +67,5 @@ brew 'fish'
 brew 'valgrind'
 
 brew 'gnu-tar'
+brew 'cfssl'
+brew 'cfssljson'
