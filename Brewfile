@@ -65,3 +65,5 @@ brew 'findutils', args: ['with-default-names']
 brew 'fish'
 
 brew 'valgrind'
+
+brew 'gnu-tar'
