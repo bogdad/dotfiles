@@ -10,5 +10,7 @@ alias gs='git status -s'
 alias ga='git add'
 alias gc='git commit'
 alias gp='git push'
+alias gd.='git diff -M --color-words="."'
+alias gd='git diff -M'
 
 export PATH="$HOME/.cargo/bin:$PATH"
