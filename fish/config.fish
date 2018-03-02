@@ -13,5 +13,5 @@ alias gp='git push'
 alias gd.='git diff -M --color-words="."'
 alias gd='git diff -M'
 
-export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$HOME/opt/clif/bin/:$PATH"
 set JAVA_HOME (/usr/libexec/java_home -v 1.8)
