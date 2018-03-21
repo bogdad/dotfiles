@@ -69,3 +69,5 @@ brew 'valgrind'
 brew 'gnu-tar'
 brew 'cfssl'
 brew 'cfssljson'
+
+brew 'radare2'
