@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-pip install kaggle-cli
+pip install kaggle
