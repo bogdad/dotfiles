@@ -12,16 +12,16 @@ alias gc='git commit'
 alias gp='git push'
 alias gd.='git diff -M --color-words="."'
 alias gd='git diff -M'
-
-alias make-list-targets="make -qp | awk -F':' '/^[a-zA-Z0-9][^$#\/\t=]*:([^=]|$)/ {split($1,A,/ /);for(i in A)print A[i]}' | sort -u"
+alias gb='git branch'
 
 alias gitclearall="gs | rg --fixed-strings '??' | rg -v 'vscode' | cut -f2 -d' ' | xargs rm -rf"
 
-export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$HOME/bin:$PATH"
 export PATH="$PATH:/usr/local/bin"
+export PATH="$PATH:$HOME/dtracetoolkit"
 
 set PYTHONHOME "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/"
-set JAVA_HOME (/usr/libexec/java_home -v 1.8)
+export env JAVA_HOME=(/usr/libexec/java_home -v 1.8)
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
 # The next line updates PATH for the Google Cloud SDK.

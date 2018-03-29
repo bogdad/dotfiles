@@ -71,3 +71,4 @@ brew 'cfssl'
 brew 'cfssljson'
 
 brew 'radare2'
+brew 'python3', args: ['with-dtrace']
