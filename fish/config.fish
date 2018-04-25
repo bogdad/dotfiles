@@ -16,13 +16,19 @@ alias gb='git branch'
 
 alias gitclearall="gs | rg --fixed-strings '??' | rg -v 'vscode' | cut -f2 -d' ' | xargs rm -rf"
 
+export GOPATH="$HOME/go"
+
 export PATH="$HOME/.cargo/bin:$HOME/bin:$PATH"
 export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:$HOME/dtracetoolkit"
+export PATH="$GOPATH/bin:$PATH"
 
 set PYTHONHOME "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/"
 export env JAVA_HOME=(/usr/libexec/java_home -v 1.8)
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+
+export env XDG_CONFIG_HOME="$HOME/.config"
+
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/vladimirshakhov/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/vladimirshakhov/google-cloud-sdk/path.fish.inc'; else; . '/Users/vladimirshakhov/google-cloud-sdk/path.fish.inc'; end; end
