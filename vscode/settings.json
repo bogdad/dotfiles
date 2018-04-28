@@ -1,14 +1,15 @@
-// Place your settings in this file to overwrite the default settings
 {
-    "java.trace.server":"verbose",
+    "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-    "editor.formatOnSave": false,
-    "julia.executablePath": "/Applications/Julia-0.5.app/Contents/Resources/julia/bin//julia",
-    "files.associations": {
-        "*.rs": "rust"
-    },
-    "workbench.colorTheme": "Solarized Dark",
-    //"lldb.executable": "mylldb",
+    "java.configuration.maven.userSettings": "/Users/vladimirshakhov/.m2/settings.xml",
+    "cmake-tools-helper.cmake_download_path": "/Users/vladimirshakhov/.vscode/extensions/maddouri.cmake-tools-helper-0.1.1/cmake_download",
     "window.zoomLevel": 0,
-    "files.autoSave": "onFocusChange",
+    "rust.rustup": {
+        "toolchain": "nightly-x86_64-apple-darwin",
+        "nightlyToolchain": "nightly-x86_64-apple-darwin"
+    },
+    "rust.mode": "rls",
+    "rust.rls": {
+        "useRustfmt": true
+    }
 }
