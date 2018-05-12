@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-set -e
+set -e -x
 
-curl https://sdk.cloud.google.com | bash --disable-prompts
+curl https://sdk.cloud.google.com | bash

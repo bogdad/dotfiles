@@ -1,1 +1,1 @@
-git clone git@github.com:brendangregg/FlameGraph.git $HOME/FlameGraph
+git clone git@github.com:brendangregg/FlameGraph.git $HOME/FlameGraph || echo "Ignoring existing"

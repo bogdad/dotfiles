@@ -15,6 +15,8 @@ alias gd.='git diff -M --color-words="."'
 alias gd='git diff -M'
 alias gb='git branch'
 
+alias tailf='tail -f'
+
 alias gitclearall="gs | rg --fixed-strings '??' | rg -v 'vscode' | cut -f2 -d' ' | xargs rm -rf"
 
 export GOPATH="$HOME/go"
