@@ -34,4 +34,4 @@ export env XDG_CONFIG_HOME="$HOME/.config"
 
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/vladimirshakhov/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/vladimirshakhov/google-cloud-sdk/path.fish.inc'; else; . '/Users/vladimirshakhov/google-cloud-sdk/path.fish.inc'; end; end
+if [ -f '/Users/vladimirshakhov/.dotfiles/fish/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/vladimirshakhov/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; else; . '/Users/vladimirshakhov/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; end; end
