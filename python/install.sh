@@ -1,3 +1,4 @@
+#!/usr/bin/env sh
 target="$HOME/.pydistutils.cfg" original="$HOME/.dotfiles/python/.pydistutils.cfg"
 backup="$HOME/.dotfiles/python/.pydistutils.cfg.orig"
 if [[ ! -L "$target" ]]; then
