@@ -15,6 +15,8 @@ alias gd.='git diff -M --color-words="."'
 alias gd='git diff -M'
 alias gb='git branch'
 
+alias gcm='git checkout master'
+
 alias tailf='tail -f'
 
 alias gitclearall="gs | rg --fixed-strings '??' | rg -v 'vscode' | cut -f2 -d' ' | xargs rm -rf"
@@ -32,6 +34,10 @@ set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
 export env XDG_CONFIG_HOME="$HOME/.config"
 
+
+export env LDFLAGS="-L/usr/local/opt/openssl/lib:$LDFLAGS"
+export env CPPFLAGS="-I/usr/local/opt/openssl/include:$CPPFLAGS"
+export env PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/vladimirshakhov/.dotfiles/fish/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/vladimirshakhov/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; else; . '/Users/vladimirshakhov/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; end; end
