@@ -17,7 +17,7 @@ alias gb='git branch'
 
 alias gcm='git checkout master'
 alias grv='git remote -v'
-
+alias gcamend='git commit --amend --no-edit'
 
 alias tailf='tail -f'
 
