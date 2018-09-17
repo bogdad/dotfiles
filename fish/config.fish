@@ -16,6 +16,8 @@ alias gd='git diff -M'
 alias gb='git branch'
 
 alias gcm='git checkout master'
+alias grv='git remote -v'
+
 
 alias tailf='tail -f'
 
