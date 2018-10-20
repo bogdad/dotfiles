@@ -2,4 +2,4 @@
 
 set -e -x
 
-curl https://sdk.cloud.google.com | bash
+#curl https://sdk.cloud.google.com | bash
