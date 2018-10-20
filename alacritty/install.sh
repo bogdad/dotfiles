@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -ex
+mkdir -p "$HOME/.config/alacritty"
 target="$HOME/.config/alacritty/alacritty.yml"
 original="$HOME/.dotfiles/alacritty/alacritty.yml"
 backup="$HOME/.dotfiles/alacritty/alacritty.yml.orig"
