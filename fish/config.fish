@@ -29,6 +29,7 @@ export PATH="$HOME/.cargo/bin:$HOME/bin:$PATH"
 export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:$HOME/dtracetoolkit"
 export PATH="$GOPATH/bin:$PATH"
+#export PATH="$PATH:$HOME/IdeaProjects/client-ios/core/bin"
 
 set PYTHONHOME "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/"
 export env JAVA_HOME=(/usr/libexec/java_home -v 1.8)
@@ -43,3 +44,4 @@ export env PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/vladimirshakhov/.dotfiles/fish/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/vladimirshakhov/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; else; . '/Users/vladimirshakhov/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; end; end
+
