@@ -158,20 +158,25 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>498 561 400 129 0 0 1440 877 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>386 363 620 392 0 0 1440 877 </string>
+	<string>385 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 163 606 469 0 0 1440 878 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>443 189 918 512 0 0 1440 878 </string>
+	<string>443 202 1018 447 0 0 1440 877 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>99 293 592 584 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>4 5 1375 855 0 0 1440 878 </string>
+	<string>0 6 1390 860 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>453 425 570 452 0 0 1440 877 </string>
+	<string>453 426 570 452 0 0 1440 878 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -858,7 +863,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-25T04:52:23Z</date>
+	<date>2018-10-12T13:28:07Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>StartDebugLoggingAutomatically</key>
@@ -870,6 +875,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.2.1</string>
 </dict>
 </plist>
