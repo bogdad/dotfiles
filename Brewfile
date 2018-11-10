@@ -1,5 +1,8 @@
 cask_args appdir: '/Applications'
 
+brew 'python@2'
+brew 'rustup-init'
+
 tap 'homebrew/bundle'
 tap 'puma/puma'
 

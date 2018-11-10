@@ -3,12 +3,12 @@ target="$HOME/Library/Application Support/Code/User/settings.json" original="$HO
 backup="$HOME/.dotfiles/vscode/settings.json.orig"
 if [[ ! -L "$target" ]]; then
     echo "installing link $target for $original\n"
-    echo "backup is $bacup\n"
-    mv -- "$target" "$backup"
+    echo "backup is $backup\n"
+    mv -- "$target" "$backup" || true
     ln -s -- "$original" "$target"
 fi
 
-code --install-extension julialang.language-julia
+#code --install-extension julialang.language-julia
 #code --install-extension kalitaalexey.vscode-rust
-code --install-extension gerane.Theme-Solarized-dark
+#code --install-extension gerane.Theme-Solarized-dark
 
