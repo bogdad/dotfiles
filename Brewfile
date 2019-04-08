@@ -49,7 +49,7 @@ cask 'spectacle'
 #cask 'visual-studio-code'
 #cask 'iterm2'
 
-brew 'valgrind'
+#brew 'valgrind'
 
 brew 'ripgrep'
 brew 'pstree'
@@ -63,11 +63,11 @@ brew 'fd'
 brew 'terraform'
 brew 'netcat'
 
-brew 'findutils', args: ['with-default-names']
+#brew 'findutils', args: ['with-default-names']
 
 brew 'fish'
 
-brew 'valgrind'
+#brew 'valgrind'
 
 brew 'gnu-tar'
 brew 'cfssl'
@@ -75,3 +75,5 @@ brew 'cfssl'
 
 #brew 'radare2'
 brew 'python3', args: ['with-dtrace']
+
+cask 'sublime-text'
