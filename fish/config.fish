@@ -29,7 +29,7 @@ export PATH="$HOME/.cargo/bin:$HOME/bin:$PATH"
 export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:$HOME/dtracetoolkit"
 export PATH="$GOPATH/bin:$PATH"
-#export PATH="$PATH:$HOME/IdeaProjects/client-ios/core/bin"
+export PATH="$PATH:$HOME/IdeaProjects/client-core/bin"
 
 set PYTHONHOME "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/"
 export env JAVA_HOME=(/usr/libexec/java_home -v 1.8)

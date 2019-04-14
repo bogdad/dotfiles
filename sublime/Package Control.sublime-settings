@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"CMake",
+		"Fix Mac Path",
 		"Goto Usage",
 		"LSP",
 		"Package Control",
