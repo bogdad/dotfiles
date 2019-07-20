@@ -4,6 +4,7 @@ function fish_user_key_bindings
 end
 
 alias pssh='pssh -X -A -x "-q -t -t -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"'
+alias pscp='pscp -X -A -x "-q -t -t -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"'
 alias ssh='ssh -A'
 alias rr='reveal role'
 alias dr='disco role'
@@ -22,6 +23,9 @@ alias gcamend='git commit --amend --no-edit'
 alias tailf='tail -f'
 
 alias gitclearall="gs | rg --fixed-strings '??' | rg -v 'vscode' | cut -f2 -d' ' | xargs rm -rf"
+
+alias urldecode='python -c "import sys; from urllib import unquote ; print(unquote(sys.stdin.read()))"'
+
 
 export GOPATH="$HOME/go"
 

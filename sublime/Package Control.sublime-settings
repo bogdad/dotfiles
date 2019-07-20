@@ -6,6 +6,7 @@
 	"installed_packages":
 	[
 		"CMake",
+		"Filter Lines",
 		"Fix Mac Path",
 		"Goto Usage",
 		"LSP",
