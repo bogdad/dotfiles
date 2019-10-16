@@ -16,7 +16,11 @@ brew 'grc'
 brew 'imagemagick'
 brew 'jp2a'
 brew 'jq'
-brew 'libcaca', args: ['with-imlib2']
+
+
+cask 'xquartz'
+
+brew 'libcaca'
 brew 'libgit2'
 brew 'openssl'
 brew 'node'
@@ -47,7 +51,7 @@ cask 'slack'
 #cask 'steam'
 cask 'spectacle'
 #cask 'visual-studio-code'
-#cask 'iterm2'
+cask 'iterm2'
 
 #brew 'valgrind'
 

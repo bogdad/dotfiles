@@ -35,6 +35,8 @@ export PATH="$PATH:$HOME/dtracetoolkit"
 export PATH="$GOPATH/bin:$PATH"
 export PATH="$PATH:$HOME/IdeaProjects/client-core/bin"
 
+export PATH="$PATH:/Users/vladimirshakhov/yandex-cloud/bin/"
+
 set PYTHONHOME "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/"
 export env JAVA_HOME=(/usr/libexec/java_home -v 1.8)
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
