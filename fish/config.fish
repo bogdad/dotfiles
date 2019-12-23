@@ -26,16 +26,26 @@ alias gitclearall="gs | rg --fixed-strings '??' | rg -v 'vscode' | cut -f2 -d' '
 
 alias urldecode='python -c "import sys; from urllib import unquote ; print(unquote(sys.stdin.read()))"'
 
+alias wios='cd $HOME/IdeaProjects/client-ios/'
+alias wioscore='cd $HOME/IdeaProjects/client-ios/core'
+alias wioscorebuild='cd $HOME/IdeaProjects/client-ios/core/build'
 
 export GOPATH="$HOME/go"
 
 export PATH="$HOME/.cargo/bin:$HOME/bin:$PATH"
+export PATH="$PATH;/usr/local/opt/ruby/bin"
 export PATH="$PATH:/usr/local/bin"
-export PATH="$PATH:$HOME/dtracetoolkit"
+export PATH="$PATH:$HOME/dtracetoolkit/Bin"
 export PATH="$GOPATH/bin:$PATH"
 export PATH="$PATH:$HOME/IdeaProjects/client-core/bin"
 
-export PATH="$PATH:/Users/vladimirshakhov/yandex-cloud/bin/"
+export PATH="$PATH:/Users/vladimir/yandex-cloud/bin/"
+export PATH="$PATH:/Users/vladimir/go/bin/"
+export PATH="$PATH:/Users/vladimir/.vulcan/cache/clang-format-9.0.0-393574-osx.tar.gz-3611c06add394d2e6a5fb195fd874c4d054bdb74/extracted/"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/opt/ccache/libexec:$PATH"
+
+#export PATH="/usr/local/anaconda3/bin:$PATH"
 
 set PYTHONHOME "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/"
 export env JAVA_HOME=(/usr/libexec/java_home -v 1.8)
@@ -49,5 +59,7 @@ export env CPPFLAGS="-I/usr/local/opt/openssl/include:$CPPFLAGS"
 export env PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/vladimirshakhov/.dotfiles/fish/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/vladimirshakhov/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; else; . '/Users/vladimirshakhov/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; end; end
+if [ -f '/Users/vladimir/.dotfiles/fish/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/vladimir/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; else; . '/Users/vladimirv/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; end; end
+
+
 

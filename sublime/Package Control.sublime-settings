@@ -5,17 +5,18 @@
 	],
 	"installed_packages":
 	[
+		"10% Too Dull for My Tastes Color Scheme",
 		"CMake",
 		"Filter Lines",
 		"Fix Mac Path",
 		"Git blame",
 		"GitSavvy",
 		"Goto Usage",
-		"LSP",
 		"Package Control",
 		"Pretty JSON",
 		"Rust Enhanced",
 		"Solarized Color Scheme",
+		"SortTabs",
 		"Swift",
 		"Terminal",
 		"TerminalView"

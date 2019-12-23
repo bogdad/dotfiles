@@ -81,3 +81,5 @@ brew 'cfssl'
 brew 'python3', args: ['with-dtrace']
 
 cask 'sublime-text'
+
+brew 'cgdb'
