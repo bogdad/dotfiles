@@ -1,5 +1,6 @@
 {
 	"bootstrapped": true,
+	"ignore_vcs_packages": true,
 	"in_process_packages":
 	[
 	],
@@ -13,6 +14,7 @@
 		"GitSavvy",
 		"Goto Usage",
 		"Package Control",
+		"PackageResourceViewer",
 		"Pretty JSON",
 		"Rust Enhanced",
 		"Solarized Color Scheme",
