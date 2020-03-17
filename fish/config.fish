@@ -15,6 +15,8 @@ alias gp='git push'
 alias gd.='git diff -M --color-words="."'
 alias gd='git diff -M'
 alias gb='git branch'
+alias grbi='git rebase -i'
+alias cninja='echo \n\n\n\n\n\n\n\n\n\n; and ninja'
 
 alias cmakecoreiossimulator='cmake -G Ninja .. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCORE_BUILD_HOST_TOOLS=ON -DCMAKE_TOOLCHAIN_FILE=../cmake/toolchains/iphone-core.cmake -DIOS_PLATFORM=SIMULATOR'
 
@@ -48,6 +50,7 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/opt/ccache/libexec:$PATH"
 export PATH="/usr/local/lib/ruby/gems/2.6.0/gems/xcpretty-0.3.0/bin/:$PATH"
 export PATH="$PATH:$HOME/.vulcan/cache/sdk-tools-darwin-4333796.zip-9b11aeda2adabaaebd127b9b6ed11de8e11e2844/extracted/platform-tools/"
+export PATH="$PATH:$HOME/.vulcan/cache/sdk-tools-darwin-4333796.zip-9b11aeda2adabaaebd127b9b6ed11de8e11e2844/extracted/tools/"
 
 #export PATH="/usr/local/anaconda3/bin:$PATH"
 
