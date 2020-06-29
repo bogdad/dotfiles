@@ -16,6 +16,12 @@ alias gd.='git diff -M --color-words="."'
 alias gd='git diff -M'
 alias gb='git branch'
 alias grbi='git rebase -i'
+alias grbc='git rebase --continue'
+alias grbs='git rebase --skip'
+alias grba='git rebase --abort'
+alias gco='git checkout '
+alias gf='git fetch '
+alias gl='git log '
 alias cninja='echo \n\n\n\n\n\n\n\n\n\n; and ninja'
 
 alias cmakecoreiossimulator='cmake -G Ninja .. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCORE_BUILD_HOST_TOOLS=ON -DCMAKE_TOOLCHAIN_FILE=../cmake/toolchains/iphone-core.cmake -DIOS_PLATFORM=SIMULATOR'
@@ -47,11 +53,11 @@ export PATH="$PATH:/Users/vladimir/yandex-cloud/bin/"
 export PATH="$PATH:/Users/vladimir/go/bin/"
 export PATH="$PATH:/Users/vladimir/.vulcan/cache/clang-format-9.0.0-393574-osx.tar.gz-3611c06add394d2e6a5fb195fd874c4d054bdb74/extracted/"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="/usr/local/opt/ccache/libexec:$PATH"
+#export PATH="/usr/local/opt/ccache/libexec:$PATH"
 export PATH="/usr/local/lib/ruby/gems/2.6.0/gems/xcpretty-0.3.0/bin/:$PATH"
 export PATH="$PATH:$HOME/.vulcan/cache/sdk-tools-darwin-4333796.zip-9b11aeda2adabaaebd127b9b6ed11de8e11e2844/extracted/platform-tools/"
 export PATH="$PATH:$HOME/.vulcan/cache/sdk-tools-darwin-4333796.zip-9b11aeda2adabaaebd127b9b6ed11de8e11e2844/extracted/tools/"
-
+export PATH="/usr/local/opt/node@12/bin:$PATH"
 #export PATH="/usr/local/anaconda3/bin:$PATH"
 
 

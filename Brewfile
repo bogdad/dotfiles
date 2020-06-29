@@ -6,6 +6,10 @@ brew 'rustup-init'
 tap 'homebrew/bundle'
 tap 'puma/puma'
 
+tap 'homebrew/cask-fonts'
+
+
+
 brew 'zsh'
 brew 'zsh-completions'
 
@@ -81,5 +85,7 @@ brew 'cfssl'
 brew 'python3', args: ['with-dtrace']
 
 cask 'sublime-text'
-
+cask 'font-fira-code'
 brew 'cgdb'
+
+brew 'ios-deploy'
