@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo -n "orange" | nc -u -c localhost 1738
+
+
