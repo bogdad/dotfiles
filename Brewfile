@@ -89,3 +89,6 @@ cask 'font-fira-code'
 brew 'cgdb'
 
 brew 'ios-deploy'
+
+cask 'anybar'
+
