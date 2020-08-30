@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo -n "red" | nc -u -c localhost 1738
+
+
