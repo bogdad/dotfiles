@@ -77,4 +77,12 @@ export env PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 if [ -f '/Users/vladimir/.dotfiles/fish/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/vladimir/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; else; . '/Users/vladimirv/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; end; end
 
 
-
+function xcodebuild
+	$HOME/.dotfiles/anybar/build_started_xcode
+    if command xcodebuild $argv
+    	$HOME/.dotfiles/anybar/build_success_xcode
+    else
+    	$HOME/.dotfiles/anybar/build_success_xcode
+    end
+end
+funcsave xcodebuild
