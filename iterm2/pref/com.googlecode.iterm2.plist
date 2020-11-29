@@ -177,11 +177,11 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>635 634 347 181 0 0 1680 1027 </string>
+	<string>1074 927 347 181 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>500 476 620 392 0 0 1680 1027 </string>
+	<string>496 476 620 392 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3 6 1312 1007 0 0 1680 1027 </string>
+	<string>19 -1 2474 1417 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>212 101 570 452 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -694,6 +694,13 @@
 					<key>Text</key>
 					<string>[24;2~</string>
 				</dict>
+				<key>0xf729-0x0</key>
+				<dict>
+					<key>Action</key>
+					<integer>10</integer>
+					<key>Text</key>
+					<string>B</string>
+				</dict>
 				<key>0xf729-0x20000</key>
 				<dict>
 					<key>Action</key>
@@ -707,6 +714,13 @@
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;5H</string>
+				</dict>
+				<key>0xf72b-0x0</key>
+				<dict>
+					<key>Action</key>
+					<integer>10</integer>
+					<key>Text</key>
+					<string>F</string>
 				</dict>
 				<key>0xf72b-0x20000</key>
 				<dict>
@@ -814,22 +828,24 @@
 	<array>
 		<string>3.3.9</string>
 		<string>3.3.8</string>
+		<string>3.3.11</string>
 		<string>3.3.7</string>
+		<string>3.3.12</string>
 		<string>3.3.6</string>
 	</array>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1680, 1050}}</string>
+		<string>{{0, 0}, {2560, 1440}}</string>
 		<key>topLeft</key>
-		<string>{269, 595}</string>
+		<string>{624, 986}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>244986EC-5C1E-470C-9431-454ABF9335F4</string>
 	<key>NoSyncLastTipTime</key>
 	<real>603732819.13758099</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>30</integer>
+	<integer>47</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1709,6 +1725,8 @@
 	<string>~/.dotfiles/iterm2/pref</string>
 	<key>Print In Black And White</key>
 	<true/>
+	<key>QuitWhenAllWindowsClosed</key>
+	<true/>
 	<key>RemoveControlCodes</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
@@ -1720,11 +1738,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-04-12T10:12:50Z</date>
+	<date>2020-09-20T16:16:06Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
-	<integer>80479250</integer>
+	<integer>1390075527</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>SoundForEsc</key>
@@ -1740,6 +1758,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.9</string>
+	<string>3.3.12</string>
 </dict>
 </plist>

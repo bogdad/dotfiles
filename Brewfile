@@ -91,4 +91,4 @@ brew 'cgdb'
 brew 'ios-deploy'
 
 cask 'anybar'
-
+cask 'karabiner-elements'
