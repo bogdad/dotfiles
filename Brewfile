@@ -100,3 +100,5 @@ cask 'keepassx'
 brew 'python3'
 cask 'visual-studio-code'
 cask 'zulu'
+
+brew 'pyenv'
