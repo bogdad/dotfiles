@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-pip install kaggle
+pip3 install kaggle
 mkdir -p $HOME/.kaggle

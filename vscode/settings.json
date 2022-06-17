@@ -12,5 +12,12 @@
     "rust.rls": {
         "useRustfmt": true
     },
-    "python.pythonPath":"/usr/local/bin/python"
+    "python.pythonPath": "/usr/local/bin/python",
+    "workbench.colorTheme": "Solarized Light+",
+    "[cpp]": {
+
+        "editor.wordBasedSuggestions": false,
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true
+    }
 }

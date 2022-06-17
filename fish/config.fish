@@ -59,9 +59,11 @@ export PATH="$PATH:$HOME/.vulcan/cache/sdk-tools-darwin-4333796.zip-9b11aeda2ada
 export PATH="$PATH:$HOME/.vulcan/cache/sdk-tools-darwin-4333796.zip-9b11aeda2adabaaebd127b9b6ed11de8e11e2844/extracted/tools/"
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 #export PATH="/usr/local/anaconda3/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 
+set pyenvroot (pyenv root)
+export PATH="$pyenvroot/shims:$PATH"
 
-set PYTHONHOME "/usr/local/Cellar/python/2.7.13/Frameworks/Python.framework/Versions/2.7/"
 export env JAVA_HOME=(/usr/libexec/java_home -v 1.8)
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
@@ -77,12 +79,12 @@ export env PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 if [ -f '/Users/vladimir/.dotfiles/fish/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/vladimir/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; else; . '/Users/vladimirv/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; end; end
 
 
-function xcodebuild
-	$HOME/.dotfiles/anybar/build_started_xcode
-    if command xcodebuild $argv
-    	$HOME/.dotfiles/anybar/build_success_xcode
-    else
-    	$HOME/.dotfiles/anybar/build_success_xcode
-    end
-end
-funcsave xcodebuild
+#function xcodebuild
+#	$HOME/.dotfiles/anybar/build_started_xcode
+#    if command xcodebuild $argv
+#    	$HOME/.dotfiles/anybar/build_success_xcode
+#    else
+#    	$HOME/.dotfiles/anybar/build_success_xcode
+#    end
+#end
+#funcsave xcodebuild

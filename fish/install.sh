@@ -10,3 +10,5 @@ if [[ ! -L "$target" ]]; then
     ln -s -- "$original" "$target"
 fi
 
+
+sudo ln -s /opt/homebrew/bin/fish /usr/local/bin/fish || true

@@ -11,5 +11,5 @@ if [ -f '/Users/vladimirshakhov/google-cloud-sdk/path.bash.inc' ]; then . '/User
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/vladimirshakhov/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/vladimirshakhov/google-cloud-sdk/completion.bash.inc'; fi
 
-export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+. "$HOME/.cargo/env"
