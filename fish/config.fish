@@ -1,8 +1,8 @@
 #function sdk
-#    bash -c "source '/Users/vladimir/.sdkman/bin/sdkman-init.sh'; sdk $argv[1..]"
+#    bash -c "source '$HOME/.sdkman/bin/sdkman-init.sh'; sdk $argv[1..]"
 #end
 
-#fish_add_path (find /Users/vladimir/.sdkman/candidates/*/current/bin -maxdepth 0)
+#fish_add_path (find $HOME/.sdkman/candidates/*/current/bin -maxdepth 0)
 
 function fish_user_key_bindings
   bind \eB backward-word
@@ -55,42 +55,54 @@ export PATH="$PATH:$HOME/dtracetoolkit/Bin"
 export PATH="$GOPATH/bin:$PATH"
 export PATH="$PATH:$HOME/IdeaProjects/client-core/bin"
 
-export PATH="$PATH:/Users/vladimir/yandex-cloud/bin/"
-export PATH="$PATH:/Users/vladimir/go/bin/"
-export PATH="$PATH:/Users/vladimir/.vulcan/cache/clang-format-9.0.0-393574-osx.tar.gz-3611c06add394d2e6a5fb195fd874c4d054bdb74/extracted/"
+export USE_GKE_GCLOUD_AUTH_PLUGIN="True"
+
+export PATH="$PATH:$HOME/bin/"
+export PATH="$PATH:$HOME/yandex-cloud/bin/"
+export PATH="$PATH:$HOME/go/bin/"
+export PATH="$PATH:$HOME/.vulcan/cache/clang-format-9.0.0-393574-osx.tar.gz-3611c06add394d2e6a5fb195fd874c4d054bdb74/extracted/"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 #export PATH="/usr/local/opt/ccache/libexec:$PATH"
 export PATH="/usr/local/lib/ruby/gems/2.6.0/gems/xcpretty-0.3.0/bin/:$PATH"
 export PATH="$PATH:$HOME/.vulcan/cache/sdk-tools-darwin-4333796.zip-9b11aeda2adabaaebd127b9b6ed11de8e11e2844/extracted/platform-tools/"
+export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools/"
 export PATH="$PATH:$HOME/.vulcan/cache/sdk-tools-darwin-4333796.zip-9b11aeda2adabaaebd127b9b6ed11de8e11e2844/extracted/tools/"
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 #export PATH="/usr/local/anaconda3/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 
-set pyenvroot (pyenv root)
-export PATH="$pyenvroot/shims:$PATH"
+#set pyenvroot (pyenv root)
+#export PATH="$pyenvroot/shims:$PATH"
 
-export env JAVA_HOME=(/usr/libexec/java_home -v 1.8)
+export PATH="$PATH:$HOME/google-cloud-sdk/bin"
+export PATH="$PATH:$HOME/.local/bin"
+
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home"
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
 export env XDG_CONFIG_HOME="$HOME/.config"
 
-export NDK="/Users/vladimir/.vulcan/cache/sdk-tools-darwin-4333796.zip-9b11aeda2adabaaebd127b9b6ed11de8e11e2844/extracted/ndk/20.1.5948944"
+export NDK="$HOME/.vulcan/cache/sdk-tools-darwin-4333796.zip-9b11aeda2adabaaebd127b9b6ed11de8e11e2844/extracted/ndk/20.1.5948944"
 
-export env LDFLAGS="-L/usr/local/opt/openssl/lib:$LDFLAGS"
-export env CPPFLAGS="-I/usr/local/opt/openssl/include:$CPPFLAGS"
+# export env LDFLAGS="-L/usr/local/opt/openssl/lib:$LDFLAGS"
+# export env CPPFLAGS="-I/usr/local/opt/openssl/include:$CPPFLAGS"
 export env PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/vladimir/.dotfiles/fish/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '/Users/vladimir/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; else; . '/Users/vladimirv/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; end; end
+if [ -f '$HOME/.dotfiles/fish/google-cloud-sdk/path.fish.inc' ]; if type source > /dev/null; source '$HOME/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; else; . '$HOME/.dotfiles/fish/google-cloud-sdk/path.fish.inc'; end; end
+
+fish_add_path /opt/homebrew/sbin
+
+fish_add_path $HOME/.nvm
 
 
-#function xcodebuild
-#	$HOME/.dotfiles/anybar/build_started_xcode
-#    if command xcodebuild $argv
-#    	$HOME/.dotfiles/anybar/build_success_xcode
-#    else
-#    	$HOME/.dotfiles/anybar/build_success_xcode
-#    end
-#end
-#funcsave xcodebuild
+export VCPKG_ROOT="$HOME/vcpkg"
+status --is-interactive; and source (jenv init -|psub)
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+eval /opt/homebrew/Caskroom/miniconda/base/bin/conda "shell.fish" "hook" $argv | source
+# <<< conda initialize <<<
+
+export env FLYTECTL_CONFIG="$HOME/.flyte/config.yaml"
+export env JAVA_HOME="/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home"
