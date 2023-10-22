@@ -6,13 +6,17 @@
 	],
 	"installed_packages":
 	[
+		"Alabaster Color Scheme",
 		"CMake",
 		"EditorConfig",
 		"Filter Lines",
 		"Fix Mac Path",
 		"Goto Usage",
 		"GotoWindow",
+		"Kotlin",
 		"LSP",
+		"LSP-clangd",
+		"LSP-ruff",
 		"Package Control",
 		"Pretty JSON",
 		"Rust Enhanced",
@@ -20,6 +24,7 @@
 		"Solarized Color Scheme",
 		"SortTabs",
 		"Swift",
-		"SyncedSideBar"
+		"Switch File Deluxe",
+		"SyncedSideBar",
 	],
 }

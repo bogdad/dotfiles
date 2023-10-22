@@ -43,4 +43,4 @@ original="$HOME/.dotfiles/sublime/Package Control.sublime-settings"
 replace_with_symlink "$target" "$original"
 
 
-git clone git@github.com:sublimelsp/LSP.git ~/Library/Application\ Support/Sublime\ Text/Packages/LSP || true
+#git clone git@github.com:sublimelsp/LSP.git ~/Library/Application\ Support/Sublime\ Text/Packages/LSP || true

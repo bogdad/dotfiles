@@ -25,7 +25,7 @@
 		"*.rmeta",
 		"*/target/debug/*"
 	],
-	"color_scheme": "Solarized (light).sublime-color-scheme",
+	"color_scheme": "Alabaster.sublime-color-scheme",
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
@@ -42,13 +42,15 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 19,
+	"font_size": 16,
 	"ignored_packages":
 	[
 		"Goto Usage",
 		"Rust",
+		"RustFmt",
 		"Vintage",
 	],
 	"shell_environment": "/usr/local/bin/fish",
 	"theme": "Adaptive.sublime-theme",
+	"preview_on_click": false,
 }

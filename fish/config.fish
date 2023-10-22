@@ -1,3 +1,9 @@
+#function sdk
+#    bash -c "source '/Users/vladimir/.sdkman/bin/sdkman-init.sh'; sdk $argv[1..]"
+#end
+
+#fish_add_path (find /Users/vladimir/.sdkman/candidates/*/current/bin -maxdepth 0)
+
 function fish_user_key_bindings
   bind \eB backward-word
   bind \eF forward-word
