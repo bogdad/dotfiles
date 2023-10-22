@@ -25,7 +25,7 @@
 		"*.rmeta",
 		"*/target/debug/*"
 	],
-	"color_scheme": "Solarized (light).sublime-color-scheme",
+	"color_scheme": "Alabaster.sublime-color-scheme",
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
