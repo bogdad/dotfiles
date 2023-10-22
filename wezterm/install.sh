@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+set -x
+set -e
 mkdir -p $HOME/.config/wezterm/
 target="$HOME/.config/wezterm/wezterm.lua" 
 original="$HOME/.dotfiles/wezterm/wezterm.lua"

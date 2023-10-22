@@ -45,6 +45,7 @@
 	"font_size": 19,
 	"ignored_packages":
 	[
+		"Goto Usage",
 		"Rust",
 		"Vintage",
 	],

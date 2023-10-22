@@ -102,3 +102,5 @@ cask 'visual-studio-code'
 cask 'zulu'
 
 brew 'pyenv'
+
+brew 'conan'
