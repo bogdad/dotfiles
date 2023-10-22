@@ -4,6 +4,10 @@
 	"in_process_packages":
 	[
 	],
+	"install_prereleases":
+ 	[
+ 	"Package Control",
+	],
 	"installed_packages":
 	[
 		"Alabaster Color Scheme",
