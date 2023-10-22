@@ -84,8 +84,8 @@ export env XDG_CONFIG_HOME="$HOME/.config"
 
 export NDK="$HOME/.vulcan/cache/sdk-tools-darwin-4333796.zip-9b11aeda2adabaaebd127b9b6ed11de8e11e2844/extracted/ndk/20.1.5948944"
 
-# export env LDFLAGS="-L/usr/local/opt/openssl/lib:$LDFLAGS"
-# export env CPPFLAGS="-I/usr/local/opt/openssl/include:$CPPFLAGS"
+export env LDFLAGS="$LDFLAGS"
+export env CPPFLAGS="$CPPFLAGS"
 export env PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
 # The next line updates PATH for the Google Cloud SDK.
