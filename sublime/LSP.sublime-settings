@@ -1,0 +1,17 @@
+// Settings in here override those in "LSP/LSP.sublime-settings"
+{
+	"clients": {
+		"rust-analyzer": {
+			"command":["/Users/vladimir/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rust-analyzer"]
+		},
+		"clangd": {
+			"command":["/opt/homebrew/opt/llvm/bin/clangd"],
+			"initializationOptions": {
+				"clangd.background-index": true,
+				"clangd.header-insertion": "iwyu",
+				"clangd.clang-tidy": true,
+				"clangd.enable-config": true
+			}
+		}
+	},
+}
