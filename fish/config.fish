@@ -42,10 +42,6 @@ alias gitclearall="gs | rg --fixed-strings '??' | rg -v 'vscode' | cut -f2 -d' '
 
 alias urldecode='python -c "import sys; from urllib import unquote ; print(unquote(sys.stdin.read()))"'
 
-alias wios='cd $HOME/IdeaProjects/client-ios/'
-alias wioscore='cd $HOME/IdeaProjects/client-ios/core'
-alias wioscorebuild='cd $HOME/IdeaProjects/client-ios/core/build'
-
 export GOPATH="$HOME/go"
 
 export PATH="$HOME/.cargo/bin:$HOME/bin:$PATH"
@@ -53,20 +49,16 @@ export PATH="$PATH;/usr/local/opt/ruby/bin"
 export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:$HOME/dtracetoolkit/Bin"
 export PATH="$GOPATH/bin:$PATH"
-export PATH="$PATH:$HOME/IdeaProjects/client-core/bin"
 
 export USE_GKE_GCLOUD_AUTH_PLUGIN="True"
 
 export PATH="$PATH:$HOME/bin/"
 export PATH="$PATH:$HOME/yandex-cloud/bin/"
 export PATH="$PATH:$HOME/go/bin/"
-export PATH="$PATH:$HOME/.vulcan/cache/clang-format-9.0.0-393574-osx.tar.gz-3611c06add394d2e6a5fb195fd874c4d054bdb74/extracted/"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 #export PATH="/usr/local/opt/ccache/libexec:$PATH"
 export PATH="/usr/local/lib/ruby/gems/2.6.0/gems/xcpretty-0.3.0/bin/:$PATH"
-export PATH="$PATH:$HOME/.vulcan/cache/sdk-tools-darwin-4333796.zip-9b11aeda2adabaaebd127b9b6ed11de8e11e2844/extracted/platform-tools/"
 export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools/"
-export PATH="$PATH:$HOME/.vulcan/cache/sdk-tools-darwin-4333796.zip-9b11aeda2adabaaebd127b9b6ed11de8e11e2844/extracted/tools/"
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 #export PATH="/usr/local/anaconda3/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
@@ -82,10 +74,6 @@ set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
 export env XDG_CONFIG_HOME="$HOME/.config"
 
-export NDK="$HOME/.vulcan/cache/sdk-tools-darwin-4333796.zip-9b11aeda2adabaaebd127b9b6ed11de8e11e2844/extracted/ndk/20.1.5948944"
-
-export env LDFLAGS="$LDFLAGS"
-export env CPPFLAGS="$CPPFLAGS"
 export env PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
 # The next line updates PATH for the Google Cloud SDK.

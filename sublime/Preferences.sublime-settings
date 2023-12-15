@@ -55,4 +55,5 @@
 	"shell_environment": "/usr/local/bin/fish",
 	"theme": "Adaptive.sublime-theme",
 	"preview_on_click": false,
+	"index_files": false,
 }
