@@ -104,3 +104,7 @@ cask 'zulu'
 brew 'pyenv'
 
 brew 'conan'
+
+brew 'helix'
+
+brew 'miniconda'

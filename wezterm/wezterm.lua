@@ -2,7 +2,7 @@ local wezterm = require 'wezterm';
 return {
   font = wezterm.font("JetBrains Mono"),
   color_scheme = "Builtin Solarized Light",
-  default_prog = {"/usr/local/bin/fish", "-l"},
+  default_prog = {"/opt/homebrew/bin/fish", "-l"},
   keys = {
     -- This will create a new split and run your default program inside it
     {key="d", mods="CMD|SHIFT",
