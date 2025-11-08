@@ -62,7 +62,7 @@ export PATH="/usr/local/lib/ruby/gems/2.6.0/gems/xcpretty-0.3.0/bin/:$PATH"
 export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools/"
 export PATH="/usr/local/opt/node@12/bin:$PATH"
 #export PATH="/usr/local/anaconda3/bin:$PATH"
-export PATH="/opt/homebrew/bin:$PATH"
+
 
 #set pyenvroot (pyenv root)
 #export PATH="$pyenvroot/shims:$PATH"
@@ -88,8 +88,13 @@ else
     fish_add_path /opt/homebrew/sbin
     fish_add_path /opt/homebrew/opt/lld@19/bin
     fish_add_path /opt/homebrew/Cellar/llvm/20.1.2/bin/
-    export env GEMINI_API_KEY="AIzaSyCDXi09lPYuWJFgLuhds5bLZPSiytCtqtk"
+    export env GEMINI_API_KEY="$SECRET_GEMINI_API_KEY"
+    export PATH="/opt/homebrew/bin:$PATH"
 
+    # >>> conda initialize >>>
+    # !! Contents within this block are managed by 'conda init' !!
+    eval /opt/homebrew/Caskroom/miniconda/base/bin/conda "shell.fish" hook $argv | source
+    # <<< conda initialize <<<
 end
 
 
@@ -111,8 +116,3 @@ fish_add_path $HOME/yandex-cloud/bin/yc
 
 export VCPKG_ROOT="$HOME/vcpkg"
 #status --is-interactive; and source (jenv init -|psub)
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-eval /opt/homebrew/Caskroom/miniconda/base/bin/conda "shell.fish" hook $argv | source
-# <<< conda initialize <<<
