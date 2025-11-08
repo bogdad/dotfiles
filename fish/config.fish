@@ -55,6 +55,7 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN="True"
 export PATH="$PATH:$HOME/bin/"
 export PATH="$PATH:$HOME/yandex-cloud/bin/"
 export PATH="$PATH:$HOME/go/bin/"
+
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 #export PATH="/usr/local/opt/ccache/libexec:$PATH"
 export PATH="/usr/local/lib/ruby/gems/2.6.0/gems/xcpretty-0.3.0/bin/:$PATH"
@@ -69,12 +70,30 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$PATH:$HOME/google-cloud-sdk/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
-#export JAVA_HOME="/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home"
 set -g fish_user_paths /usr/local/sbin $fish_user_paths
 
-export env XDG_CONFIG_HOME="$HOME/.config"
+set -l os (uname)
+if test "$os" = Darwin
 
-export env PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+else if test "$os" = Linux
+    fish_add_path /usr/local/cuda-13.0/bin
+    export env CUDA_HOME="/usr/local/cuda"
+    export env LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-13.0/lib64"
+    export env PULSE_SERVER="tcp:127.0.0.1"
+    export env XDG_CONFIG_HOME="$HOME/.config"
+    export env PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+    fish_add_path $HOME/.nvm
+else
+    alias claude="/Users/vladimir/.claude/local/claude"
+    fish_add_path /opt/homebrew/sbin
+    fish_add_path /opt/homebrew/opt/lld@19/bin
+    fish_add_path /opt/homebrew/Cellar/llvm/20.1.2/bin/
+    export env GEMINI_API_KEY="AIzaSyCDXi09lPYuWJFgLuhds5bLZPSiytCtqtk"
+
+end
+
+
+
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '$HOME/.dotfiles/fish/google-cloud-sdk/path.fish.inc' ]
@@ -85,13 +104,8 @@ if [ -f '$HOME/.dotfiles/fish/google-cloud-sdk/path.fish.inc' ]
     end
 end
 
-export env GEMINI_API_KEY="AIzaSyCDXi09lPYuWJFgLuhds5bLZPSiytCtqtk"
 
-fish_add_path /opt/homebrew/sbin
-fish_add_path /opt/homebrew/opt/lld@19/bin
-fish_add_path $HOME/.nvm
 
-fish_add_path /opt/homebrew/Cellar/llvm/20.1.2/bin/
 
 fish_add_path $HOME/yandex-cloud/bin/yc
 
@@ -102,11 +116,3 @@ export VCPKG_ROOT="$HOME/vcpkg"
 # !! Contents within this block are managed by 'conda init' !!
 eval /opt/homebrew/Caskroom/miniconda/base/bin/conda "shell.fish" hook $argv | source
 # <<< conda initialize <<<
-
-#export env FLYTECTL_CONFIG="$HOME/.flyte/config.yaml"
-#export env JAVA_HOME="/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home"
-
-alias claude="/Users/vladimir/.claude/local/claude"
-
-# opencode
-fish_add_path /Users/vladimir/.opencode/bin
