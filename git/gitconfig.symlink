@@ -54,7 +54,7 @@
   untracked = cyan
 
 [user]
-	email = vladimir@spotify.com
+	email = bogdad@gmail.com
 	name = Vladimir Shakhov
 [filter "lfs"]
 	clean = git-lfs clean -- %f

@@ -108,3 +108,5 @@ brew 'conan'
 brew 'helix'
 
 brew 'miniconda'
+brew 'cmake'
+brew 'ninja'
