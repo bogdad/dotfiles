@@ -50,19 +50,6 @@ export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:$HOME/dtracetoolkit/Bin"
 export PATH="$GOPATH/bin:$PATH"
 
-set -l os (uname)
-if test "$os" = Darwin
-    # do things for macOS
-    fish_add_path /opt/homebrew/opt/openjdk/bin
-    set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk/include"
-else if test "$os" = Linux
-    # do things for Linux
-else
-    # do things for other operating systems
-end
-
-
-
 export USE_GKE_GCLOUD_AUTH_PLUGIN="True"
 
 export PATH="$PATH:$HOME/bin/"
@@ -87,16 +74,6 @@ set -g fish_user_paths /usr/local/sbin $fish_user_paths
 
 set -l os (uname)
 if test "$os" = Darwin
-
-else if test "$os" = Linux
-    fish_add_path /usr/local/cuda-13.0/bin
-    export env CUDA_HOME="/usr/local/cuda"
-    export env LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-13.0/lib64"
-    export env PULSE_SERVER="tcp:127.0.0.1"
-    export env XDG_CONFIG_HOME="$HOME/.config"
-    export env PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
-    fish_add_path $HOME/.nvm
-else
     alias claude="/Users/vladimir/.claude/local/claude"
     fish_add_path /opt/homebrew/sbin
     fish_add_path /opt/homebrew/opt/lld@19/bin
@@ -108,6 +85,19 @@ else
     # !! Contents within this block are managed by 'conda init' !!
     eval /opt/homebrew/Caskroom/miniconda/base/bin/conda "shell.fish" hook $argv | source
     # <<< conda initialize <<<
+    # do things for macOS
+    fish_add_path /opt/homebrew/opt/openjdk/bin
+    set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk/include"
+else if test "$os" = Linux
+    fish_add_path /usr/local/cuda-13.0/bin
+    export env CUDA_HOME="/usr/local/cuda"
+    export env LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-13.0/lib64"
+    export env PULSE_SERVER="tcp:127.0.0.1"
+    export env XDG_CONFIG_HOME="$HOME/.config"
+    export env PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+    fish_add_path $HOME/.nvm
+else
+
 end
 
 
