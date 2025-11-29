@@ -50,6 +50,19 @@ export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:$HOME/dtracetoolkit/Bin"
 export PATH="$GOPATH/bin:$PATH"
 
+set -l os (uname)
+if test "$os" = Darwin
+    # do things for macOS
+    fish_add_path /opt/homebrew/opt/openjdk/bin
+    set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk/include"
+else if test "$os" = Linux
+    # do things for Linux
+else
+    # do things for other operating systems
+end
+
+
+
 export USE_GKE_GCLOUD_AUTH_PLUGIN="True"
 
 export PATH="$PATH:$HOME/bin/"
