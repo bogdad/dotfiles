@@ -8,7 +8,7 @@ tap 'puma/puma'
 
 tap 'homebrew/cask-fonts'
 
-
+brew 'openjdk'
 
 brew 'zsh'
 brew 'zsh-completions'
