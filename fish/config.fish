@@ -9,8 +9,6 @@ function fish_user_key_bindings
     bind \eF forward-word
 end
 
-source "$HOME/.cargo/env.fish"
-
 alias pssh='pssh -X -A -x "-q -t -t -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"'
 alias pscp='pscp -X -A -x "-q -t -t -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"'
 alias ssh='ssh -A'
@@ -75,6 +73,9 @@ set -g fish_user_paths /usr/local/sbin $fish_user_paths
 set -l os (uname)
 if test "$os" = Darwin
     alias claude="/Users/vladimir/.claude/local/claude"
+    #echo "darwin\n"
+    source "$HOME/.cargo/env.fish"
+
     fish_add_path /opt/homebrew/sbin
     fish_add_path /opt/homebrew/opt/lld@19/bin
     fish_add_path /opt/homebrew/Cellar/llvm/20.1.2/bin/
@@ -85,9 +86,10 @@ if test "$os" = Darwin
     # !! Contents within this block are managed by 'conda init' !!
     eval /opt/homebrew/Caskroom/miniconda/base/bin/conda "shell.fish" hook $argv | source
     # <<< conda initialize <<<
+
     # do things for macOS
     fish_add_path /opt/homebrew/opt/openjdk/bin
-    set -gx CPPFLAGS "-I/opt/homebrew/opt/openjdk/include"
+    set -gx CPPFLAGS -I/opt/homebrew/opt/openjdk/include
 else if test "$os" = Linux
     fish_add_path /usr/local/cuda-13.0/bin
     export env CUDA_HOME="/usr/local/cuda"
@@ -96,8 +98,27 @@ else if test "$os" = Linux
     export env XDG_CONFIG_HOME="$HOME/.config"
     export env PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
     fish_add_path $HOME/.nvm
-else
 
+    #echo "linux\n"
+    if not set -q DBUS_SESSION_BUS_ADDRESS
+        dbus-launch | while read -l line
+            set -l parts (string split '=' -- $line)
+            if test (count $parts) -eq 2
+                set -gx $parts[1] $parts[2]
+            end
+        end
+    end
+    ulimit -n 4096
+    export env PULSE_SERVER="/mnt/wslg/PulseServer"
+    fish_add_path /usr/local/cuda-13.0/bin
+    export env CUDA_HOME="/usr/local/cuda"
+    export env LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-13.0/lib64"
+    #export env PULSE_SERVER="tcp:127.0.0.1"
+    #export env XDG_CONFIG_HOME="$HOME/.config"
+    export env PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+    fish_add_path $HOME/.nvm
+    nvm use v24.8.0 2>&1 >/dev/null
+else
 end
 
 
