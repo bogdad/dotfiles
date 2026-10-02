@@ -4,6 +4,9 @@
 
 #fish_add_path (find $HOME/.sdkman/candidates/*/current/bin -maxdepth 0)
 
+
+fish_add_path /usr/local/Cellar/atuin/18.0.1/bin
+
 function fish_user_key_bindings
     bind \eB backward-word
     bind \eF forward-word
@@ -27,8 +30,6 @@ alias gco='git checkout '
 alias gf='git fetch '
 alias gl='git log '
 alias cninja='echo \n\n\n\n\n\n\n\n\n\n; and ninja'
-
-#alias cmakecoreiossimulator='cmake -G Ninja .. -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCORE_BUILD_HOST_TOOLS=ON -DCMAKE_TOOLCHAIN_FILE=../cmake/toolchains/iphone-core.cmake -DIOS_PLATFORM=SIMULATOR'
 
 alias gcm='git checkout master'
 alias grv='git remote -v'
@@ -126,7 +127,9 @@ else
 end
 
 
-
+export env LDFLAGS="$LDFLAGS"
+export env CPPFLAGS="$CPPFLAGS"
+export env PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '$HOME/.dotfiles/fish/google-cloud-sdk/path.fish.inc' ]
@@ -138,9 +141,11 @@ if [ -f '$HOME/.dotfiles/fish/google-cloud-sdk/path.fish.inc' ]
 end
 
 
+# static path: `sdk home java ...` spawns bash + sdkman init (~1.4s per shell)
+set JAVA_HOME $HOME/.sdkman/candidates/java/21.0.1-graal
 
+if status --is-interactive
+  atuin init fish --disable-up-arrow | source
+end
 
-fish_add_path $HOME/yandex-cloud/bin/yc
-
-export VCPKG_ROOT="$HOME/vcpkg"
-#status --is-interactive; and source (jenv init -|psub)
+fish_add_path /Users/vshakhov/Library/Python/3.13/bin

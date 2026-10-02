@@ -157,3 +157,16 @@ alias gu='git fetch upstream && git rebase upstream/master'
 
 export PATH="$PATH:$HOME/IdeaProjects/scripts"
 #alias connect_dealer='curl -i -N -H "Connection: Upgrade" -H "Upgrade: websocket" -H "Origin: https://${HOSTDEALER}" -H "Authorization: Bearer $TOKEN" http://${HOSTDEALER} '
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/Users/vshakhov/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<
