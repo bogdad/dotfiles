@@ -72,7 +72,9 @@ set -g fish_user_paths /usr/local/sbin $fish_user_paths
 
 set -l os (uname)
 if test "$os" = Darwin
-    alias claude="/Users/vladimir/.claude/local/claude"
+    if test -x /Users/vladimir/.claude/local/claude
+        alias claude="/Users/vladimir/.claude/local/claude"
+    end
     #echo "darwin\n"
     source "$HOME/.cargo/env.fish"
 
@@ -84,7 +86,9 @@ if test "$os" = Darwin
 
     # >>> conda initialize >>>
     # !! Contents within this block are managed by 'conda init' !!
-    eval /opt/homebrew/Caskroom/miniconda/base/bin/conda "shell.fish" hook $argv | source
+    if test -x /opt/homebrew/Caskroom/miniconda/base/bin/conda
+        eval /opt/homebrew/Caskroom/miniconda/base/bin/conda "shell.fish" hook $argv | source
+    end
     # <<< conda initialize <<<
 
     # do things for macOS
