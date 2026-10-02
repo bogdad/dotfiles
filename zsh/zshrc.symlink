@@ -32,7 +32,7 @@ done
 
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -U compinit
-compinit
+compinit -C
 
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
@@ -105,7 +105,7 @@ export ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git,zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting)
 
 ZSH_THEME="agnoster"
 
@@ -154,7 +154,6 @@ source $HOME/.cargo/env
 #export PATH="$HOME/toolkit:$PATH"
 export PATH="$HOME/FlameGraph:$PATH"
 alias gu='git fetch upstream && git rebase upstream/master'
-export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 export PATH="$PATH:$HOME/IdeaProjects/scripts"
 #alias connect_dealer='curl -i -N -H "Connection: Upgrade" -H "Upgrade: websocket" -H "Origin: https://${HOSTDEALER}" -H "Authorization: Bearer $TOKEN" http://${HOSTDEALER} '
