@@ -5,10 +5,11 @@
 	"inhibit_word_completions": true,
 	"clients": {
 		"rust-analyzer": {
-			"command":["/Users/vshakhov/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rust-analyzer"]
+			"command":["${home}/.cargo/bin/rust-analyzer"]
 		},
 		"clangd": {
-			"command":["/usr/local/Cellar/llvm/19.1.7/bin/clangd", "-j=1"],
+			// first Homebrew llvm found (Apple Silicon or Intel); -j=1 on small CPUs
+			"command":["sh", "-c", "for d in /opt/homebrew/opt/llvm /usr/local/opt/llvm; do [ -x $d/bin/clangd ] || continue; [ $(sysctl -n hw.ncpu) -le 4 ] && set -- -j=1 \"$@\"; exec $d/bin/clangd \"$@\"; done; exit 127", "clangd"],
 			"initializationOptions": {
 				"clangd.background-index": true,
 				"clangd.header-insertion": "iwyu",
